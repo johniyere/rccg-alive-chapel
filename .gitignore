@@ -1,2 +1,8 @@
+# dependencies
+/node_modules
+
+# Generated Files
+/public
+
 # hugo generated files
 /resources

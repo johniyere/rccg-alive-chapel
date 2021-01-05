@@ -1,3 +1,49 @@
 {{ define "main" }}
-    Hello form index
+{{ $backgroundImage := relURL "images/nqobile-vundla-6XbkMzlLHm4-unsplash.jpg" }}
+
+    <div class="hero-section">
+        <div style="background-image: 
+            linear-gradient(120.4deg, rgba(0, 0, 0, 0.41) 49.44%, rgba(40, 22, 111, 0.222128) 97.4%),
+            url('{{ $backgroundImage }}');" class="background-image">
+        </div>
+        <div class="hero-block text-white">
+            <div class="text-center fw-bold hero-sub">JOIN US AT ALIVE CHAPEL</div>
+            <div class="hero-title">
+                <h1 class="text-center display-3">
+                    <span class="text-accent">“</span>Jesus Christ the same
+                    <br>
+                    Yesterday, Today and Forever<span class="text-accent">”</span>
+                </h1>
+                <div class="text-end fw-light hero-sub">- Hebrew 13: 8</div>
+            </div>
+            
+            <div class="text-center hero-sub">Pastor E.A. Adeboye (General Overseer RCCG)</div>
+        </div>
+        
+
+    </div>
+    <div class="d-flex justify-content-center py-4 px-4" style="background-color: #EEEEEE;">
+        <div>
+            <h3 class="text-primary">
+                Pastors Christopher and Esther Iteman<span class="text-accent">.</span>
+                <br>
+                Parish Pastors of Alive Chapel, Wigan
+            </h3>
+            <p class="mb-0">
+                Alive Chapel, Wigan is a Parish under The Redeemed Christian Church 
+                <br>
+                of God. It was inaugurated in April 2008 as a branch of RCCG by Pastor 
+                <br> 
+                Remi Oluboba, a Regional Pastor in RCCG. Born out of our mother Parish 
+                <br>
+                RCCG Breakthrough Parish, Bolton as a vision of the set man, Pastor A.
+                <br>
+                Adeleye.
+            </p>
+        </div>
+        
+
+    </div>
+
+
 {{ end }}

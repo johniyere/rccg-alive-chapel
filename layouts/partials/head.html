@@ -1,8 +1,6 @@
 <head>
 
     
-
-
     <title>{{ .Title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +11,8 @@
     {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@100;500;700&display=swap" rel="stylesheet"> 
 
 </head>

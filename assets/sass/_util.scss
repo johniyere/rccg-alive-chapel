@@ -1,0 +1,53 @@
+// Color Utilities
+@each $color, $value in $colors {
+  .text-#{$color} {
+    color: $value;
+  }
+
+  .text-outline-#{$color} {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px $value;
+  }
+
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-end {
+  text-align: end !important;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+
+.hide-md {
+  @media screen and (max-width: 768px) {
+    visibility: hidden !important;
+    display: none !important;
+  }
+}
+
+.hide-sm {
+  @media screen and (max-width: 540px) {
+    visibility: hidden !important;
+    display: none !important;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "rccg-alive-chapel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:hugo",
+    "start:hugo": "hugo server -w -D",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johniyere/rccg-alive-chapel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johniyere/rccg-alive-chapel/issues"
+  },
+  "homepage": "https://github.com/johniyere/rccg-alive-chapel#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1"
+  }
+}
