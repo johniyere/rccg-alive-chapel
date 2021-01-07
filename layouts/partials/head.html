@@ -11,8 +11,15 @@
     {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
+    {{ $mainJS := resources.Get "js/main.js" }}
+
+    {{ $js := slice $mainJS | resources.Concat "js/bundle.js" | minify | fingerprint }}
+    <script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@100;500;700&display=swap" rel="stylesheet"> 
 
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/4100a95aad.js" crossorigin="anonymous"></script>
 </head>

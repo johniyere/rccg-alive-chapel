@@ -2,6 +2,9 @@
 <html lang="en">
     {{ partial "head" . }}
     <body>
+        <header>
+            {{ partial "navbar" . }}
+        </header>
         <main role="main">
             {{ block "main" . }}
             {{ end }}
